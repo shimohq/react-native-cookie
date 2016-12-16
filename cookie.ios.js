@@ -14,7 +14,11 @@ export default {
     },
 
     set(url:String, name: String, value: any, options?: Object): Promise {
-        return CookieManager.setCookie(url, name, value, options);
+        const opts = Object.assign(options);
+        if (opts.expires && opts.expires instanceof Date) {
+            opts.expires = opts.expires.getTime();
+        }
+        return CookieManager.setCookie(url, name, value, opts);
     },
 
     clear(url?: String): Promise {
