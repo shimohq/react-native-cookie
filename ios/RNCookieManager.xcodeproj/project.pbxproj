@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1017893C1B283EE1006C41B8 /* libRCTToggle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 101789301B283EE1006C41B8 /* libRCTToggle.a */; };
-		109B57151C4DCA5A0018E5E9 /* RCTToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 109B57141C4DCA5A0018E5E9 /* RCTToggle.m */; };
+		1017893C1B283EE1006C41B8 /* libRNCookieManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 101789301B283EE1006C41B8 /* libRNCookieManager.a */; };
+		7FE295451E03BDA2009E7610 /* RNCookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE295441E03BDA2009E7610 /* RNCookieManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -17,7 +17,7 @@
 			containerPortal = 101789281B283EE1006C41B8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1017892F1B283EE1006C41B8;
-			remoteInfo = RCTToggle;
+			remoteInfo = RNCookieManager;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -34,10 +34,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		101789301B283EE1006C41B8 /* libRCTToggle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTToggle.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1017893B1B283EE1006C41B8 /* RCTToggleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCTToggleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		109B57131C4DCA5A0018E5E9 /* RCTToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTToggle.h; sourceTree = "<group>"; };
-		109B57141C4DCA5A0018E5E9 /* RCTToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTToggle.m; sourceTree = "<group>"; };
+		101789301B283EE1006C41B8 /* libRNCookieManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCookieManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1017893B1B283EE1006C41B8 /* RNCookieManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNCookieManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE295431E03BDA2009E7610 /* RNCookieManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCookieManager.h; sourceTree = "<group>"; };
+		7FE295441E03BDA2009E7610 /* RNCookieManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCookieManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1017893C1B283EE1006C41B8 /* libRCTToggle.a in Frameworks */,
+				1017893C1B283EE1006C41B8 /* libRNCookieManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +62,8 @@
 		101789271B283EE1006C41B8 = {
 			isa = PBXGroup;
 			children = (
-				109B57131C4DCA5A0018E5E9 /* RCTToggle.h */,
-				109B57141C4DCA5A0018E5E9 /* RCTToggle.m */,
+				7FE295431E03BDA2009E7610 /* RNCookieManager.h */,
+				7FE295441E03BDA2009E7610 /* RNCookieManager.m */,
 				101789311B283EE1006C41B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,8 +71,8 @@
 		101789311B283EE1006C41B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				101789301B283EE1006C41B8 /* libRCTToggle.a */,
-				1017893B1B283EE1006C41B8 /* RCTToggleTests.xctest */,
+				101789301B283EE1006C41B8 /* libRNCookieManager.a */,
+				1017893B1B283EE1006C41B8 /* RNCookieManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,9 +80,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1017892F1B283EE1006C41B8 /* RCTToggle */ = {
+		1017892F1B283EE1006C41B8 /* RNCookieManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 101789441B283EE1006C41B8 /* Build configuration list for PBXNativeTarget "RCTToggle" */;
+			buildConfigurationList = 101789441B283EE1006C41B8 /* Build configuration list for PBXNativeTarget "RNCookieManager" */;
 			buildPhases = (
 				1017892C1B283EE1006C41B8 /* Sources */,
 				1017892D1B283EE1006C41B8 /* Frameworks */,
@@ -92,14 +92,14 @@
 			);
 			dependencies = (
 			);
-			name = RCTToggle;
-			productName = RCTToggle;
-			productReference = 101789301B283EE1006C41B8 /* libRCTToggle.a */;
+			name = RNCookieManager;
+			productName = RNCookieManager;
+			productReference = 101789301B283EE1006C41B8 /* libRNCookieManager.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		1017893A1B283EE1006C41B8 /* RCTToggleTests */ = {
+		1017893A1B283EE1006C41B8 /* RNCookieManagerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 101789471B283EE1006C41B8 /* Build configuration list for PBXNativeTarget "RCTToggleTests" */;
+			buildConfigurationList = 101789471B283EE1006C41B8 /* Build configuration list for PBXNativeTarget "RNCookieManagerTests" */;
 			buildPhases = (
 				101789371B283EE1006C41B8 /* Sources */,
 				101789381B283EE1006C41B8 /* Frameworks */,
@@ -110,9 +110,9 @@
 			dependencies = (
 				1017893E1B283EE1006C41B8 /* PBXTargetDependency */,
 			);
-			name = RCTToggleTests;
-			productName = RCTToggleTests;
-			productReference = 1017893B1B283EE1006C41B8 /* RCTToggleTests.xctest */;
+			name = RNCookieManagerTests;
+			productName = RNCookieManagerTests;
+			productReference = 1017893B1B283EE1006C41B8 /* RNCookieManagerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -122,7 +122,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
-				ORGANIZATIONNAME = zhuanla;
+				ORGANIZATIONNAME = shimo;
 				TargetAttributes = {
 					1017892F1B283EE1006C41B8 = {
 						CreatedOnToolsVersion = 6.2;
@@ -132,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1017892B1B283EE1006C41B8 /* Build configuration list for PBXProject "RCTToggle" */;
+			buildConfigurationList = 1017892B1B283EE1006C41B8 /* Build configuration list for PBXProject "RNCookieManager" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -144,8 +144,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1017892F1B283EE1006C41B8 /* RCTToggle */,
-				1017893A1B283EE1006C41B8 /* RCTToggleTests */,
+				1017892F1B283EE1006C41B8 /* RNCookieManager */,
+				1017893A1B283EE1006C41B8 /* RNCookieManagerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -165,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				109B57151C4DCA5A0018E5E9 /* RCTToggle.m in Sources */,
+				7FE295451E03BDA2009E7610 /* RNCookieManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +181,7 @@
 /* Begin PBXTargetDependency section */
 		1017893E1B283EE1006C41B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1017892F1B283EE1006C41B8 /* RCTToggle */;
+			target = 1017892F1B283EE1006C41B8 /* RNCookieManager */;
 			targetProxy = 1017893D1B283EE1006C41B8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -312,7 +312,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RCTToggleTests/Info.plist;
+				INFOPLIST_FILE = RNCookieManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -325,7 +325,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RCTToggleTests/Info.plist;
+				INFOPLIST_FILE = RNCookieManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -334,7 +334,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1017892B1B283EE1006C41B8 /* Build configuration list for PBXProject "RCTToggle" */ = {
+		1017892B1B283EE1006C41B8 /* Build configuration list for PBXProject "RNCookieManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				101789421B283EE1006C41B8 /* Debug */,
@@ -343,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		101789441B283EE1006C41B8 /* Build configuration list for PBXNativeTarget "RCTToggle" */ = {
+		101789441B283EE1006C41B8 /* Build configuration list for PBXNativeTarget "RNCookieManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				101789451B283EE1006C41B8 /* Debug */,
@@ -352,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		101789471B283EE1006C41B8 /* Build configuration list for PBXNativeTarget "RCTToggleTests" */ = {
+		101789471B283EE1006C41B8 /* Build configuration list for PBXNativeTarget "RNCookieManagerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				101789481B283EE1006C41B8 /* Debug */,

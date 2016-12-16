@@ -1,0 +1,28 @@
+{
+    "name": "react-native-cookie",
+    "version": "0.0.1",
+    "description": "A cookie manager module for react-native",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shimohq/react-native-cookie"
+    },
+    "license": "MIT",
+    "keywords": [
+        "react-component",
+        "react-native",
+        "cookie",
+        "ios",
+        "android"
+    ],
+    "scripts": {
+        "lint": "eslint ./"
+    },
+    "dependencies": {
+        "cookie": "^0.3.1"
+    },
+    "devDependencies": {
+        "babel-eslint": "^6.1.2",
+        "eslint": "^2.13.1",
+        "eslint-plugin-react": "^4.3.0"
+    }
+}
