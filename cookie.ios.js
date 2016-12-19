@@ -13,7 +13,7 @@ export default {
         });
     },
 
-    set(url:String, name: String, value: any, options?: Object): Promise {
+    set(url:String, name: String, value: any, options?: Object = {}): Promise {
         const opts = Object.assign(options);
         for (let key in opts) {
             if (opts.hasOwnProperty(key)) {
