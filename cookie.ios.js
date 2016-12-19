@@ -15,10 +15,17 @@ export default {
 
     set(url:String, name: String, value: any, options?: Object): Promise {
         const opts = Object.assign(options);
-        if (opts.expires && opts.expires instanceof Date) {
-            opts.expires = opts.expires.getTime();
+        for (let key in opts) {
+            if (opts.hasOwnProperty(key)) {
+                if (key === 'expires') {
+                    opts.expires = +opts.expires;
+                } else {
+                    opts[key] = '' + opts[key];
+                }
+            }
         }
-        return CookieManager.setCookie(url, name, value, opts);
+
+        return CookieManager.setCookie(url, name + '', value + '', opts);
     },
 
     clear(url?: String): Promise {
