@@ -18,9 +18,9 @@ export default {
         for (let key in opts) {
             if (opts.hasOwnProperty(key)) {
                 if (key === 'expires') {
-                    opts.expires = +opts.expires;
+                    opts.expires = +opts.expires / 1000;
                 } else {
-                    opts[key] = '' + opts[key];
+                    opts[key] = opts[key] + '';
                 }
             }
         }

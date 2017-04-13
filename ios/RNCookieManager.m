@@ -20,7 +20,7 @@ RCT_EXPORT_METHOD(getCookie:(NSURL *)url
     } else {
         resolve(NULL);
     }
-    
+
 }
 
 RCT_EXPORT_METHOD(setCookie:(NSURL *) url
@@ -31,25 +31,25 @@ RCT_EXPORT_METHOD(setCookie:(NSURL *) url
                    rejecter:(RCTPromiseRejectBlock)reject)
 {
     NSMutableDictionary *cookieProperties = [NSMutableDictionary dictionary];
-    
+
     [cookieProperties setObject:url.host forKey:NSHTTPCookieOriginURL];
     [cookieProperties setObject:name forKey:NSHTTPCookieName];
     [cookieProperties setObject:value forKey:NSHTTPCookieValue];
-    
+
     NSString *domain = [RCTConvert NSString:props[@"domain"]];
     [cookieProperties setObject:domain ? domain : url.host forKey:NSHTTPCookieDomain];
-    
+
     NSString *path = [RCTConvert NSString:props[@"path"]];
     [cookieProperties setObject:path ? path : @"/" forKey:NSHTTPCookiePath];
-    
-    NSString *expires = [RCTConvert NSString:props[@"expires"]];
+
+    NSNumber *expires = [RCTConvert NSNumber:props[@"expires"]];
     if (expires) {
-        [cookieProperties setObject:expires forKey:NSHTTPCookieExpires];
+        [cookieProperties setObject:[NSDate dateWithTimeIntervalSince1970:[expires doubleValue]] forKey:NSHTTPCookieExpires];
     };
-    
+
     NSHTTPCookie *cookie = [NSHTTPCookie cookieWithProperties:cookieProperties];
     [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
-    
+
     resolve(NULL);
 }
 
@@ -57,7 +57,7 @@ RCT_EXPORT_METHOD(clearCookieFromURL:(NSURL *)url
                      resolver:(RCTPromiseResolveBlock)resolve
                      rejecter:(RCTPromiseRejectBlock)reject)
 {
-    
+
     NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
     NSArray *cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:url];
     if ([cookies count]) {
@@ -65,19 +65,19 @@ RCT_EXPORT_METHOD(clearCookieFromURL:(NSURL *)url
             [cookieStorage deleteCookie:cookie];
         }
     }
-    
+
     resolve(NULL);
 }
 
 RCT_EXPORT_METHOD(clearCookies:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
-    
+
     NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
     for (NSHTTPCookie *cookie in cookieStorage.cookies) {
         [cookieStorage deleteCookie:cookie];
     }
-    
+
     resolve(NULL);
 }
 
