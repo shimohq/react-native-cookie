@@ -49,7 +49,7 @@ Specifies the Date object to be the value for the Expires Set-Cookie attribute. 
 * path
 Specifies the value for the Path Set-Cookie attribute. By default, the path is considered the "default path". By default, no maximum age is set, and most clients will consider this a "non-persistent cookie" and will delete it on a condition like exiting a web browser application
 
-```
+```javascript
 // set cookie 'foo=bar' for 'http://bing.com/'
 Cookie.set('http://bing.com/', 'foo', 'bar').then(() => console.log('success'));
 
@@ -65,7 +65,7 @@ Cookie.set('http://bing.com/', 'foo', 'bar', {
 
 `Cookie.clear(url?: String): Promise`
 
-```
+```javascript
 // clear all cookies for all domains
 Cookie.clear();
 
