@@ -7,19 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1017893C1B283EE1006C41B8 /* libRNCookieManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 101789301B283EE1006C41B8 /* libRNCookieManager.a */; };
 		7FE295451E03BDA2009E7610 /* RNCookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE295441E03BDA2009E7610 /* RNCookieManager.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1017893D1B283EE1006C41B8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 101789281B283EE1006C41B8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1017892F1B283EE1006C41B8;
-			remoteInfo = RNCookieManager;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1017892E1B283EE1006C41B8 /* CopyFiles */ = {
@@ -35,7 +24,6 @@
 
 /* Begin PBXFileReference section */
 		101789301B283EE1006C41B8 /* libRNCookieManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCookieManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1017893B1B283EE1006C41B8 /* RNCookieManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNCookieManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE295431E03BDA2009E7610 /* RNCookieManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCookieManager.h; sourceTree = "<group>"; };
 		7FE295441E03BDA2009E7610 /* RNCookieManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCookieManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,14 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		101789381B283EE1006C41B8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1017893C1B283EE1006C41B8 /* libRNCookieManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				101789301B283EE1006C41B8 /* libRNCookieManager.a */,
-				1017893B1B283EE1006C41B8 /* RNCookieManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,24 +76,6 @@
 			productReference = 101789301B283EE1006C41B8 /* libRNCookieManager.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		1017893A1B283EE1006C41B8 /* RNCookieManagerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 101789471B283EE1006C41B8 /* Build configuration list for PBXNativeTarget "RNCookieManagerTests" */;
-			buildPhases = (
-				101789371B283EE1006C41B8 /* Sources */,
-				101789381B283EE1006C41B8 /* Frameworks */,
-				101789391B283EE1006C41B8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1017893E1B283EE1006C41B8 /* PBXTargetDependency */,
-			);
-			name = RNCookieManagerTests;
-			productName = RNCookieManagerTests;
-			productReference = 1017893B1B283EE1006C41B8 /* RNCookieManagerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -125,9 +86,6 @@
 				ORGANIZATIONNAME = shimo;
 				TargetAttributes = {
 					1017892F1B283EE1006C41B8 = {
-						CreatedOnToolsVersion = 6.2;
-					};
-					1017893A1B283EE1006C41B8 = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -145,20 +103,9 @@
 			projectRoot = "";
 			targets = (
 				1017892F1B283EE1006C41B8 /* RNCookieManager */,
-				1017893A1B283EE1006C41B8 /* RNCookieManagerTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		101789391B283EE1006C41B8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1017892C1B283EE1006C41B8 /* Sources */ = {
@@ -169,22 +116,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		101789371B283EE1006C41B8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1017893E1B283EE1006C41B8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1017892F1B283EE1006C41B8 /* RNCookieManager */;
-			targetProxy = 1017893D1B283EE1006C41B8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		101789421B283EE1006C41B8 /* Debug */ = {
@@ -301,36 +233,6 @@
 			};
 			name = Release;
 		};
-		101789481B283EE1006C41B8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RNCookieManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		101789491B283EE1006C41B8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RNCookieManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -348,15 +250,6 @@
 			buildConfigurations = (
 				101789451B283EE1006C41B8 /* Debug */,
 				101789461B283EE1006C41B8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		101789471B283EE1006C41B8 /* Build configuration list for PBXNativeTarget "RNCookieManagerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				101789481B283EE1006C41B8 /* Debug */,
-				101789491B283EE1006C41B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
