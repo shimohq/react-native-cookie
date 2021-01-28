@@ -7,7 +7,11 @@ A cookie manager module for react-native(Supports for both iOS and Android).
 ```bash
 # install library from npm
 npm install react-native-cookie --save
-# link native code
+
+# for RN 0.60 and above
+cd ios/ && pod install
+
+# for RN 0.59 and below
 react-native link react-native-cookie
 ```
 
